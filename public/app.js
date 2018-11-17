@@ -49,9 +49,9 @@ function addSource(button) {
   plus.onclick = function() { addTarget(this) }
 
   const col1 = document.createElement('div')
-  col1.classList.add('col')
+  col1.classList.add('col-md-6')
   const col2 = document.createElement('div')
-  col2.classList.add('col')
+  col2.classList.add('col-md-6')
 
   const parent = button.parentNode.parentNode
 
