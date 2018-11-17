@@ -71,13 +71,13 @@ function update() {
   const rows = document.querySelectorAll('.input-row')
 
   rows.forEach(row => {
-    const source = row.querySelectorAll('.col')[0].querySelectorAll('.connection-input')[0].value
+    const source = row.querySelectorAll('.col-md-6')[0].querySelectorAll('.connection-input')[0].value
 
     if (!nodes.map(n => n.id).includes(source)) {
       nodes.push({ id: source })
     }
 
-    const inputs = row.querySelectorAll('.col')[1].querySelectorAll('.connection-input')
+    const inputs = row.querySelectorAll('.col-md-6')[1].querySelectorAll('.connection-input')
 
     inputs.forEach(input => {
       if (input.value && !nodes.map(n => n.id).includes(input.value)) {
